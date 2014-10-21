@@ -7,7 +7,13 @@ var gopro = new GoPro();
 */
 
 var Sonic = require('./lib/Sonic');
-var sonic = new Sonic();
+
+var distance = 0;
+
+console.log('Starting');
+distance = Sonic.measureDistance(Sonic.alphaPins);
+
+console.log(distance);
 
 // gopro.setBurstMode();
 // wait 3 seconds before taking a picture
